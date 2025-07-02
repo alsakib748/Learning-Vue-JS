@@ -10,7 +10,9 @@ const data = {
   tasks: [1, 2, "No", 4, 5]
 };
 
-export { data };
+// export { data };
+
+export default data;
 
 function getDate() {
   const date = new Date();
