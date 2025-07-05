@@ -1,11 +1,14 @@
 <script setup>
 
-import { ref } from 'vue';
+import { ref, reactive } from 'vue';
 
-const location = ref("Dhaka");
+const location = reactive({
+  name: 'Dhaka',
+  weather: 'Sunny',
+})
 
 function changeLocation(newLocation) {
-  location.value = newLocation;
+  location.name = newLocation;
 }
 
 </script>
@@ -24,7 +27,7 @@ function changeLocation(newLocation) {
         Khulna
       </button>
     </div>
-    <h1 class="text-2xl m-10">Current Location: {{ location }}</h1>
+    <h1 class="text-2xl m-10">Current Location: {{ location.name }}</h1>
   </section>
 </template>
 

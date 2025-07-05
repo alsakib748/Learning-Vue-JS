@@ -29,10 +29,10 @@ const icons = [
 
   <section class="mx-auto container">
     <section class="mx-auto container space-y-3 p-5 border border-gray-500 w-80 flex flex-col items-center">
-      <div v-for="icon in icons" :key="icon.title" class="text-center">
+      <template v-for="icon in icons" :key="icon.title" class="text-center">
         <h2 class="text-2xl">{{ icon.title }}</h2>
         <img :src="icon.icon" :alt="icon.title" class="w-16 h-16">
-      </div>
+      </template>
     </section>
   </section>
 
