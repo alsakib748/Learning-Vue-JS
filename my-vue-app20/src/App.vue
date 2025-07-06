@@ -39,7 +39,7 @@ function setText(text) {
     <h2 class="mt-10">{{ about }}</h2>
     <div class="container mx-auto flex space-x-5 justify-center m-[1000px]">
       <a v-for="link in links" :key="link.name" href="#" @click.prevent="setText(link.about)" class="">{{ link.name
-      }}</a>
+        }}</a>
     </div>
   </section>
 </template>
