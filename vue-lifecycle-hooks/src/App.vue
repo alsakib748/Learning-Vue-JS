@@ -4,9 +4,17 @@ import { ref, onBeforeMount, onMounted, watch, onUnmounted, onUpdated } from 'vu
 
 const status = ref([])
 
+const apiResponse = ref(null);
+
 onBeforeMount(() => {
   console.log("Before mount");
   status.value.push("Before mount!");
+
+  fetch('https://jsonplaceholder.typicode.com/posts/1')
+    .then(response => response.json())
+    .then(json => {
+      apiResponse.value = json;
+    });
 });
 
 // onBeforeMount(function () {
@@ -32,6 +40,7 @@ onMounted(() => {
       <div class="text-2xl w-1/2">
         {{ status }}
       </div>
+      <p class="mt-10">{{ apiResponse }}</p>
     </div>
   </section>
 
