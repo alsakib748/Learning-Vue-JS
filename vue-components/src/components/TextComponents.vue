@@ -1,15 +1,15 @@
 <script setup>
 
-// v-model == modelValue
+// todo: v-model == modelValue
 // const props = defineProps([
 //     'label', 'modelValue'
 // ]);
 
+// const emit = defineEmits(['update:modelValue']);
+
 const props = defineProps([
     'person'
 ]);
-
-// const emit = defineEmits(['update:modelValue']);
 
 </script>
 
