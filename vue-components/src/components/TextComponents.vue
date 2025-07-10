@@ -1,5 +1,6 @@
 <script setup>
 
+// v-model == modelValue
 const props = defineProps([
     'label', 'modelValue'
 ]);
