@@ -1,6 +1,5 @@
 <script setup>
 
-import Home from './components/Home.vue';
 import Sidebar from './components/Sidebar.vue';
 
 </script>
@@ -14,11 +13,10 @@ import Sidebar from './components/Sidebar.vue';
       <Sidebar />
     </aside>
     <main class="w-full min-h-screen p-5 prose">
-      <Home />
+      <router-view></router-view>
     </main>
   </section>
   <footer></footer>
-
 
 </template>
 

@@ -1,5 +1,7 @@
 <script setup>
 
+import { RouterLink } from 'vue-router';
+
 </script>
 
 <template>
@@ -15,16 +17,22 @@
                 <a href="" class="text-white">Dashboard</a>
             </li> -->
             <li>
-                <a href="" class="text-white">Home</a>
+                <!-- <a href="" class="text-white">Home</a> -->
+                <router-link to="/">Home</router-link>
             </li>
             <li>
-                <a href="" class="text-white">About</a>
+                <!-- <a href="" class="text-white">About</a> -->
+                <!-- <RouterLink to="/about"></RouterLink> -->
+                <router-link to="/about">About</router-link>
             </li>
             <li>
-                <a href="" class="text-white">Contact</a>
+                <!-- <a href="" class="text-white">Contact</a> -->
+                <router-link to="/contact">Contact</router-link>
             </li>
             <li>
-                <a href="" class="text-white">Blog</a>
+                <!-- <a href="" class="text-white">Blog</a> -->
+                <!-- <RouterLink to="/blog"></RouterLink> -->
+                <router-link to="/blog">Blog</router-link>
             </li>
             <!-- <li>
                 <a href="" class="text-white">Post 1</a>
