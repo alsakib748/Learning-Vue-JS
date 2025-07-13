@@ -28,11 +28,14 @@ import Button from './components/Button.vue';
       <br /> <br />
 
       <Button>
-        <template v-slot:licon>
+        <!-- <template v-slot:licon> -->
+        <!-- todo: Shortcut of v-slot is # -->
+        <template #licon>
           <i class="fas fa-home"></i>
         </template>
-        Don't Click Me
-        <template v-slot:ricon>
+        <template #default>Don't Click Me</template>
+        <!-- <template v-slot:ricon> -->
+        <template #ricon>
           <i class="fab fa-github"></i>
         </template>
       </Button>
