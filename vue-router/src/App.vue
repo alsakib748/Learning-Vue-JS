@@ -15,6 +15,7 @@ import Sidebar from './components/Sidebar.vue';
     <main class="w-full min-h-screen p-5 prose">
       <router-view></router-view>
     </main>
+    <router-view name="right"></router-view>
   </section>
   <footer></footer>
 
