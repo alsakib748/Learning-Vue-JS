@@ -18,12 +18,14 @@ import { RouterLink } from 'vue-router';
             </li> -->
             <li>
                 <!-- <a href="" class="text-white">Home</a> -->
-                <router-link to="/">Home</router-link>
+                <!-- <router-link to="/">Home</router-link> OR -->
+                <router-link :to="{ name: 'home' }">Home</router-link>
             </li>
             <li>
                 <!-- <a href="" class="text-white">About</a> -->
                 <!-- <RouterLink to="/about"></RouterLink> -->
-                <router-link to="/about">About</router-link>
+                <!-- <router-link to="/about">About</router-link> OR -->
+                <router-link :to="{ name: 'about' }">About</router-link>
             </li>
             <li>
                 <!-- <a href="" class="text-white">Contact</a> -->
