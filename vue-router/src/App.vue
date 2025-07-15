@@ -13,6 +13,8 @@ import Sidebar from './components/Sidebar.vue';
       <Sidebar />
     </aside>
     <main class="w-full min-h-screen p-5 prose">
+      <!-- <router-view :key="$route.fullPath"></router-view> -->
+      <!-- another way -->
       <router-view></router-view>
     </main>
     <router-view name="right"></router-view>

@@ -9,10 +9,24 @@
             <h2 class="text-2xl text-white">Tags</h2>
             <br />
             <ul class="flex flex-col space-y-5">
-                <li>Travel</li>
-                <li>Food</li>
-                <li>Lifestyle</li>
-                <li>Misc</li>
+                <li>
+                    <router-link :to="{ name: 'tag', params: { tag: 'travel' } }">
+                        Travel
+                    </router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'tag', params: { tag: 'food' } }">
+                        Food
+                    </router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'tag', params: { tag: 'lifestyle' } }">Lifestyle</router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'tag', params: { tag: 'tech' } }">
+                        Tech
+                    </router-link>
+                </li>
             </ul>
         </section>
     </aside>

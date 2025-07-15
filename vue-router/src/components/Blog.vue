@@ -1,12 +1,24 @@
 <script setup>
 
-import { ref } from 'vue';
+import { ref, watch, computed } from 'vue';
 
 import { useRoute } from 'vue-router';
 
 const route = useRoute();
 
-const tag = ref(route.params.tag);
+// const tag = ref(route.params.tag);
+
+// const tag = ref('');
+
+// watch(() => route.params.tag, (newValue) => {
+//     tag.value = newValue;
+// });
+
+//  another way 
+
+const tag = computed(() => {
+    return route.params.tag
+});
 
 </script>
 
