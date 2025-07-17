@@ -13,21 +13,22 @@ const store = useCounterStore();
 // todo: We can not destructure like this 
 // const { count, doubleCount, increment } = store; (It's not work)
 // Correct way to destructure
-const { count, doubleCount } = storeToRefs(store);
+// const { count, doubleCount } = storeToRefs(store);
 
 // This action can be destructured normally
-const { increment } = store;
+// const { increment } = store;
 </script>
 
 <template>
     <h1>A Component</h1>
-    <!-- <h2 class=""> Count : {{ store.count }} </h2>
+    <h2 class=""> Count : {{ store.count }} </h2>
     <h2 class="">Double Count : {{ store.doubleCount }}</h2>
-    <button @click="store.increment">Increment</button> -->
+    <button @click="store.increment">Increment</button>
 
-    <h2 class=""> Count : {{ count }} </h2>
+    <!-- todo: This is work when use storeToRefs -->
+    <!-- <h2 class=""> Count : {{ count }} </h2>
     <h2 class="">Double Count : {{ doubleCount }}</h2>
-    <button class="" @click="increment">Increment</button>
+    <button class="" @click="increment">Increment</button> -->
 
 </template>
 
